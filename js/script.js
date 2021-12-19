@@ -17,3 +17,4 @@ toolTip();
 initFuncionamento();
 initAnimaisFetch();
 initFetchBitcoin();
+
