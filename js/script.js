@@ -5,7 +5,7 @@ import Modal from './modules/init-modal.js';
 import ToolTip from './modules/tool-tip.js';
 import scrollEfeito from './modules/scroll-sides.js';
 import initFuncionamento from './modules/funcionamento.js';
-import initAnimaisFetch from './modules/fetch-animais.js';
+import fetchAnimais from './modules/fetch-animais.js';
 import initFetchBitcoin from './modules/fetchbitcoin.js';
 
 
@@ -25,10 +25,10 @@ const toolTip = new ToolTip('[data-tooltip]');
 toolTip.init()
 
 
-
+fetchAnimais('../../animaisapi.json', '.numeros-grid');
 scrollEfeito();
 initFuncionamento();
-initAnimaisFetch();
+
 initFetchBitcoin();
 
 
