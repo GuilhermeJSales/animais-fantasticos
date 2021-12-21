@@ -3,10 +3,11 @@ import Accordion from './modules/accordion-list.js';
 import TabNav from './modules/tab-navigation.js';
 import Modal from './modules/init-modal.js';
 import ToolTip from './modules/tool-tip.js';
-import scrollEfeito from './modules/scroll-sides.js';
-import initFuncionamento from './modules/funcionamento.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitcoin from './modules/fetchbitcoin.js';
+import scrollEfeito from './modules/scroll-sides.js';
+import initFuncionamento from './modules/funcionamento.js';
+
 
 
 const scrollSuave = new ScrollSuave('[data-menu="scroll-suave"] a[href^="#"]');
