@@ -5,7 +5,7 @@ import Modal from './modules/init-modal.js';
 import ToolTip from './modules/tool-tip.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitcoin from './modules/fetchbitcoin.js';
-import scrollEfeito from './modules/scroll-sides.js';
+import ScrollAnima from './modules/scroll-anima.js';
 import initFuncionamento from './modules/funcionamento.js';
 
 
@@ -29,7 +29,9 @@ fetchAnimais('../../animaisapi.json', '.numeros-grid');
 
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
 
-scrollEfeito();
+const scrollAnima = new ScrollAnima('[data-scroll="anima-scroll"]');
+scrollAnima.init();
+
 initFuncionamento();
 
 
