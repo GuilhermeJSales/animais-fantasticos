@@ -7,6 +7,7 @@ import fetchAnimais from './modules/fetch-animais.js';
 import fetchBitcoin from './modules/fetchbitcoin.js';
 import ScrollAnima from './modules/scroll-anima.js';
 import initFuncionamento from './modules/funcionamento.js';
+import initDropdownMenu from './modules/dropdownmenu.js';
 
 
 
@@ -33,6 +34,7 @@ const scrollAnima = new ScrollAnima('[data-scroll="anima-scroll"]');
 scrollAnima.init();
 
 initFuncionamento();
+initDropdownMenu();
 
 
 
