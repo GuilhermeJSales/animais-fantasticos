@@ -13,9 +13,7 @@ export default class MenuMobile{
 
   this.openMenu = this.openMenu.bind(this);
 
-  }
-
-  
+  } 
 
 
   openMenu(){

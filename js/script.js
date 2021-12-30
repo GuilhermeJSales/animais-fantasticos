@@ -8,7 +8,7 @@ import fetchBitcoin from './modules/fetchbitcoin.js';
 import ScrollAnima from './modules/scroll-anima.js';
 import DropdownMenu from './modules/dropdownmenu';
 import MenuMobile from './modules/menu-mobile.js';
-import initFuncionamento from './modules/funcionamento.js';
+import Funcionamento from './modules/funcionamento.js';
 
 
 
@@ -38,13 +38,19 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]')
 menuMobile.init();
 
+const funcionamento = new Funcionamento('[data-semana]', 'aberto')
+console.log(funcionamento)
+funcionamento.init();
+
+
+
+
 fetchAnimais('../../animaisapi.json', '.numeros-grid');
 
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
 
 
 
-initFuncionamento();
 
 
 
