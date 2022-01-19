@@ -31,11 +31,13 @@
 
 .modal {
   background: #fff;
-  min-width: 300px;
+  width: 80vw;
+  max-width: 600px;
   padding: 40px;
   box-shadow: 0 0 0 10px #fff;
   border: #ffbb55 10px solid;
   position: relative;
+  box-sizing: border-box;
 }
 
 .fechar {
@@ -45,12 +47,9 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #ee5544;
+  background: #ee5544 url("../img/fechar.svg") no-repeat center center;
   border: none;
   box-shadow: 0 0 0 5px #fff;
-  font-size: 1.25rem;
-  font-family: "IBM Plex Mono", monospace;
-  color: #fff;
   cursor: pointer;
 }
 
@@ -67,6 +66,8 @@
   padding: 10px 20px;
   margin: 10px 0 20px 0;
   outline-color: #ffbb55;
+  border: 2px solid #222;
+  border-radius: 0px;
 }
 
 .modal button[type="submit"] {

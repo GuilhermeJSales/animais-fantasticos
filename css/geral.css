@@ -71,15 +71,10 @@ body {
   color: #fff;
 }
 
-/* MAIN */
-
-.conteudo {
-  grid-column: 2/4;
-}
-
 /* ESTRUTURA */
 
 .estrutura {
+  grid-column: 2/4;
   display: grid;
   grid-template-columns: 90px 300px 1fr;
   gap: 20px;
@@ -280,7 +275,7 @@ body {
   }
 
   .menu,
-  .conteudo,
+  .estrutura,
   .footer {
     grid-column: 1;
   }
@@ -301,7 +296,7 @@ body {
   }
 
   .titulo {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .menu {
@@ -360,13 +355,20 @@ body {
 }
 
 .js [data-faq="accordion"] dt::after {
-  content: "▼";
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url("../img/arrow-red.svg") no-repeat center center;
   margin-left: 10px;
+  transform: rotate(90deg);
+  transition: transform 0.3s;
 }
 
 .js [data-faq="accordion"] dt.ativo::after {
-  content: "▲";
+  content: "";
   margin-left: 10px;
+  transform: rotate(-90deg);
 }
 
 .js [data-faq="accordion"] dd {
@@ -402,4 +404,11 @@ body {
   padding: 0.2rem 0.5rem;
   font-weight: bold;
   border-radius: 2px;
+}
+
+.arrow-black {
+  background: url("../img/arrow-black.svg") no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
 }
