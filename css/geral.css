@@ -34,7 +34,7 @@ html.textomaior {
 body {
   background: #faf6ed;
   color: #222;
-  font-family: "IBM Plex Mono", arial, Helvetica;
+  -webkit-font-smoothing: antialiased;
 }
 
 .grid-container {
